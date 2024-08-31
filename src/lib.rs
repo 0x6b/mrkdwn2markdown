@@ -1,2 +1,2 @@
 mod types;
-pub use types::Blocks;
+pub use types::Block;
