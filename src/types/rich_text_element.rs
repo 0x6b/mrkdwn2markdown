@@ -54,6 +54,8 @@ pub enum RichTextElement {
         channel_id: String,
         style: Option<Style>,
     },
+    #[serde(other)]
+    Unsupported,
 }
 
 impl Display for RichTextElement {
@@ -176,6 +178,7 @@ impl Display for RichTextElement {
                 result.push('>');
                 result
             }
+            RichTextElement::Unsupported => String::with_capacity(0),
         };
         write!(f, "{str}")
     }
