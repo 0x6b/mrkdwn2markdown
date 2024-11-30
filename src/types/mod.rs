@@ -3,6 +3,7 @@ mod block_type;
 mod list_style;
 mod rich_text_element;
 mod style;
+mod text_object;
 
 pub use block::Block;
 pub use block_type::BlockType;

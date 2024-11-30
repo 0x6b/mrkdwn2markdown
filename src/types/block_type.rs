@@ -4,6 +4,7 @@ use serde::Deserialize;
 #[serde(rename_all = "snake_case")]
 pub enum BlockType {
     RichText,
+    Section,
 
     Actions, // not supported
     Context, // not supported
@@ -12,6 +13,5 @@ pub enum BlockType {
     Header,  // not supported
     Image,   // not supported
     Input,   // not supported
-    Section, // not supported
     Video,   // not supported
 }
